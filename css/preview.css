@@ -1,0 +1,211 @@
+/* Preview Page Specific Styles */
+main.container {
+    padding: 40px 0;
+}
+
+.preview-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.preview-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.preview-header p {
+    color: var(--gray-color);
+    margin-bottom: 30px;
+}
+
+.preview-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.preview-actions button, .preview-actions a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Resume Template Styles */
+.resume-template {
+    background-color: white;
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 40px;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.resume-header h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.resume-header p {
+    color: var(--gray-color);
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-info i {
+    color: var(--primary-color);
+}
+
+.resume-section {
+    margin-bottom: 25px;
+}
+
+.resume-section h3 {
+    font-size: 18px;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.education-item, .experience-item, .project-item, .certification-item {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    display: flex;
+    justify-content: space-between;
+    color: var(--gray-color);
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.section-description {
+    margin-top: 10px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Template Options */
+.template-options {
+    margin-top: 40px;
+}
+
+.template-options h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.template-card {
+    background-color: var(--light-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.template-preview {
+    height: 400px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.template-preview.modern {
+    background: linear-gradient(135deg, #4361ee 0%, #4cc9f0 100%);
+}
+
+.template-preview.classic {
+    background: linear-gradient(135deg, #3f37c9 0%, #560bad 100%);
+}
+
+.template-preview.creative {
+    background: linear-gradient(135deg, #f72585 0%, #b5179e 100%);
+}
+
+.template-card h3 {
+    margin-bottom: 15px;
+}
+
+.select-template {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.select-template:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Responsive Styles for Preview */
+@media (max-width: 768px) {
+    .preview-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .preview-actions button, .preview-actions a {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .resume-template {
+        padding: 30px 20px;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Resume Preview | ResumeCraft</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/preview.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Resume<span>Craft</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="builder.html">Edit Resume</a></li>
+                    <li><a href="#download">Download</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="preview-header">
+            <h1>Your Resume Preview</h1>
+            <p>Review your resume before downloading. You can go back to edit if needed.</p>
+            <div class="preview-actions">
+                <button id="downloadPdfBtn" class="cta-button">
+                    <i class="fas fa-file-pdf"></i> Download as PDF
+                </button>
+                <a href="builder.html" class="secondary-button">
+                    <i class="fas fa-edit"></i> Edit Resume
+                </a>
+                <button id="printBtn" class="secondary-button">
+                    <i class="fas fa-print"></i> Print Resume
+                </button>
+            </div>
+        </div>
+
+        <div id="finalResume" class="resume-template modern">
+            <!-- Resume content will be loaded here from localStorage -->
+        </div>
+
+        <div class="template-options">
+            <h2>Choose a Different Template</h2>
+            <div class="template-grid">
+                <div class="template-card" data-template="modern">
+                    <div class="template-preview modern"></div>
+                    <h3>Modern</h3>
+                    <button class="select-template">Select</button>
+                </div>
+                <div class="template-card" data-template="classic">
+                    <div class="template-preview classic"></div>
+                    <h3>Classic</h3>
+                    <button class="select-template">Select</button>
+                </div>
+                <div class="template-card" data-template="creative">
+                    <div class="template-preview creative"></div>
+                    <h3>Creative</h3>
+                    <button class="select-template">Select</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 ResumeCraft. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="js/preview.js"></script>
+</body>
+</html>
